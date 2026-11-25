@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "screenforge": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/bin/screenforge-mcp"
+    }
+  }
+}

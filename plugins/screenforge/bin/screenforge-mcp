@@ -1,0 +1,12 @@
+#!/bin/sh
+# Start ScreenForge's MCP server: the command line tool inside the installed app (macOS), the
+# Homebrew or .deb link (screenforge-cli), or the one SCREENFORGE_CLI names.
+for cli in "$SCREENFORGE_CLI" \
+  /Applications/ScreenForge.app/Contents/MacOS/sf \
+  "$HOME/Applications/ScreenForge.app/Contents/MacOS/sf" \
+  /opt/screenforge/sf; do
+  if [ -n "$cli" ] && [ -x "$cli" ]; then exec "$cli" mcp; fi
+done
+if command -v screenforge-cli >/dev/null 2>&1; then exec screenforge-cli mcp; fi
+echo "ScreenForge is not installed (or is older than 0.1.66). Download it from https://screenforge.studio or run 'brew install zot24/tap/screenforge', then restart your agent." >&2
+exit 1

@@ -1,0 +1,10 @@
+{
+  "name": "screenforge",
+  "description": "Record your screen and edit recordings into polished videos with ScreenForge: cuts, speed, zooms, backgrounds, captions, narration and export.",
+  "version": "0.1.0",
+  "author": { "name": "ScreenForge", "url": "https://screenforge.studio" },
+  "homepage": "https://screenforge.studio",
+  "repository": "https://github.com/smartloop-labs/screenforge-plugins",
+  "license": "MIT",
+  "keywords": ["screen recording", "video editing", "screencast", "demo video", "mcp"]
+}

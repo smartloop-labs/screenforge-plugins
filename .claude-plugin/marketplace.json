@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "screenforge",
+  "description": "ScreenForge: record your screen and edit it into a polished video from your agent",
+  "owner": { "name": "ScreenForge", "email": "support@screenforge.studio" },
+  "plugins": [
+    {
+      "name": "screenforge",
+      "description": "Record the screen and edit recordings into polished videos (cuts, speed, zooms, backgrounds, captions, narration, export) through the ScreenForge app's MCP server. Runs on your computer; ScreenForge spends no AI tokens of its own.",
+      "author": { "name": "ScreenForge", "url": "https://screenforge.studio" },
+      "category": "productivity",
+      "source": "./plugins/screenforge"
+    }
+  ]
+}
