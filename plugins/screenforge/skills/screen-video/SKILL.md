@@ -58,7 +58,8 @@ older than 0.1.66: point the user to https://screenforge.studio (or
 - Use `render_frame` at the moments you changed to see the finished look before saying it is
   done.
 - Use `export` when the user wants the file. It writes mp4 by default (gif or webm on
-  request), next to the project unless `out` is given, plus a `.details.txt` with a title,
-  description and tags.
+  request), next to the project unless `out` is given, plus a `.details.txt`. Write its
+  `title`, `description` (a few sentences on what the video shows) and `tags` yourself and pass
+  them to `export`: ScreenForge runs no model here, so without them the file is only a template.
 - Report what changed with times as m:ss. `undo_answers` reverts your edits if the user does
   not like them.
