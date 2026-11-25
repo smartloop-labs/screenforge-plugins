@@ -12,8 +12,15 @@ You need ScreenForge 0.1.66 or later, installed on macOS from
 
 ## Claude Code
 
+Run these in Claude Code one at a time. First add the marketplace:
+
 ```
 /plugin marketplace add smartloop-labs/screenforge-plugins
+```
+
+Then install the plugin:
+
+```
 /plugin install screenforge@screenforge
 ```
 
